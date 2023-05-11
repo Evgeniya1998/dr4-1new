@@ -14,16 +14,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
     <dependency>
-        <dependencies>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter</artifactId>
         <version>5.7.0</version>
         <scope>test</scope>
+         </dependency>
         </dependencies>
-    </dependency>
 
-    <plugin>
+<build>
+    <plugins>
+        <plugin>
+
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.2</version>
@@ -31,5 +34,6 @@
             <failIfNoTests>true</failIfNoTests>
         </configuration>
     </plugin>
-
+        </plugins>
+    </build>
 </project>
